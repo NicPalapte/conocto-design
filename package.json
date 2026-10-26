@@ -1,0 +1,57 @@
+{
+  "name": "@conocto/design",
+  "version": "0.1.0",
+  "description": "Conocto-Designsystem: Tokens, Schriften, Logo und React-Bausteine für alle Conocto-Produkte.",
+  "private": true,
+  "type": "module",
+  "files": [
+    "dist",
+    "tokens",
+    "assets",
+    "styles.css",
+    "index.css",
+    "fonts.js",
+    "tailwind-preset.cjs",
+    "claude-skill"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./index.css": "./index.css",
+    "./tokens.css": "./tokens/tokens.css",
+    "./tokens.json": "./tokens/tokens.json",
+    "./styles.css": "./styles.css",
+    "./fonts": "./fonts.js",
+    "./tailwind-preset": "./tailwind-preset.cjs",
+    "./assets/*": "./assets/*"
+  },
+  "sideEffects": [
+    "*.css",
+    "./fonts.js"
+  ],
+  "scripts": {
+    "tokens": "node scripts/build-tokens.mjs",
+    "check:tokens": "node scripts/build-tokens.mjs --check",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepare": "npm run build",
+    "test": "npm run build && node scripts/smoke.mjs"
+  },
+  "dependencies": {
+    "@fontsource/hanken-grotesk": "^5.2.0",
+    "@fontsource/schibsted-grotesk": "^5.2.0"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.3.1",
+    "typescript": "^5.9.0"
+  }
+}

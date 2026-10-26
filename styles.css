@@ -1,0 +1,55 @@
+/* Conocto — Grundstil und schwebende Flächen. Setzt tokens/tokens.css voraus. */
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--fs-cell);
+  -webkit-font-smoothing: antialiased;
+}
+:where(button, a, [tabindex]):focus-visible {
+  outline: 2px solid var(--accent-ink);
+  outline-offset: 1px;
+}
+.cn-glass {
+  background: var(--glass);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.cn-window {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow);
+}
+.cn-pill {
+  background: var(--glass-strong);
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.cn-pill:hover { border-color: var(--line2); }
+.cn-btn {
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 12.5px;
+  cursor: pointer;
+  transition: border-color var(--dur-base) var(--ease), background var(--dur-base) var(--ease);
+}
+.cn-btn:hover { border-color: var(--line2); }
+.cn-btn.primary { border-color: var(--accent-fill); background: var(--accent-fill); color: #fff; }
+.cn-btn.primary:hover { background: var(--accent-fill-hover); }
+.cn-btn:disabled { cursor: not-allowed; color: var(--mute); }
+.cn-vchip { transition: border-color var(--dur-base) var(--ease); }
+.cn-vchip:not(.on):hover { border-color: var(--line2); }
