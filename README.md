@@ -3,8 +3,13 @@
 Das gemeinsame Aussehen aller Conocto-Produkte (LV-Viewer, BIM-Viewer, …):
 Farben, Schriften, Logo und fertige Bausteine. Einmal hier ändern, überall gleich.
 
-Vorschau mit allen Farben und Bausteinen:
-[Design-System-Artifact](https://claude.ai/artifact/K52zzhEuiAzQWWCGyMenaD)
+![Farben, Schrift und Bausteine in Hell](docs/vorschau-hell.png)
+
+<details><summary>Dunkel</summary>
+
+![Farben, Schrift und Bausteine in Dunkel](docs/vorschau-dunkel.png)
+
+</details>
 
 ## Was drin ist
 
@@ -38,6 +43,9 @@ import { ConoctoLogo, Button } from '@conocto/design';
 1. Wert in `tokens/tokens.json` ändern.
 2. `npm run tokens` ausführen, das schreibt `tokens/tokens.css` neu.
 3. Neue Version taggen (z. B. `v0.2.0`) und in den Projekten die Version hochsetzen.
+
+Vorschaubilder neu erzeugen: `npm run vorschau`, dann `docs/vorschau.html` im Browser öffnen
+und je Thema einen Screenshot speichern.
 
 Die CI prüft bei jedem PR, dass CSS und JSON zusammenpassen und alle Bausteine fehlerfrei rendern.
 

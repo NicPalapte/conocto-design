@@ -39,7 +39,8 @@
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "prepare": "npm run build",
-    "test": "npm run build && node scripts/smoke.mjs"
+    "test": "npm run build && node scripts/smoke.mjs",
+    "vorschau": "npm run build && node scripts/vorschau.mjs"
   },
   "dependencies": {
     "@fontsource/hanken-grotesk": "^5.2.0",
