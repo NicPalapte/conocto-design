@@ -1,6 +1,6 @@
 {
   "name": "@conocto/design",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "Conocto-Designsystem: Tokens, Schriften, Logo und React-Bausteine für alle Conocto-Produkte.",
   "private": true,
   "type": "module",
