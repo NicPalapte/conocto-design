@@ -9,3 +9,8 @@
 - Strikte TS-Types, kein `any`. Zeilenlänge ≤ 100.
 - Commits: Conventional Commits, Scopes `tokens · components · assets · docs · ci`.
 - Texte für den Owner (README, docs/) in einfachem Deutsch, Ergebnis zuerst; Owner ist kein Software-Experte.
+- Entscheidungen nur als `docs/decisions/neu-<titel>.md` mit `# NEU – Titel`; nach außen `DS-NNNN`.
+  Verboten: Nummer selbst vergeben, Zeile in `docs/decisions/README.md`, Version in `package.json`,
+  `CHANGELOG.md` oder Tag von Hand. Stattdessen `changes/<titel>.md`; Nummer, Version, Changelog
+  und Tag macht `.github/workflows/entscheidungen.yml` nach dem Merge.
+- `.github/conocto/entscheidungen.py` ist in allen vier Conocto-Repos gleich, nur gemeinsam ändern.
