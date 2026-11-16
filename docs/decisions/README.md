@@ -8,6 +8,7 @@ stehen in Conocto Doc, z. B. DOC-0069 (Look) und DOC-0076 (Designsystem als Pake
 
 | Nr.  | Entscheidung | Status | Datum |
 | ---- | ------------ | ------ | ----- |
+| 0001 | [Nummer, Version und Changelog erst nach dem Merge](0001-nummern-beim-merge.md) | akzeptiert | 2026-11-16 |
 
 ## Regeln
 
